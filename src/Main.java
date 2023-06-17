@@ -20,8 +20,11 @@ public class Main {
         System.out.println("Введите сумму пополнения: ");
         int refillAmount = sc.nextInt();
 
-        int bonus = refillAmount / 100;
-        int finalAmount = initAmount + refillAmount + bonus;
+        int bonus;
+        bonus = refillAmount / 100;
+
+        int finalAmount;
+        finalAmount = initAmount + refillAmount + bonus;
 
         if (bonus >= 1) {
             System.out.println("Клиент пополнил счёт на: " + refillAmount + " рублей - бонус равен: " + bonus + " рублей, итоговая сумма на счету клиента: " + finalAmount + " рублей.");
