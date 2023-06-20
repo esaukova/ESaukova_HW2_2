@@ -13,12 +13,12 @@ public class Main {
        на экран. */
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Введите начальную сумму на счету: ");
         int initAmount = scanner.nextInt();
 
-        Scanner sc = new Scanner(System.in);
         System.out.println("Введите сумму пополнения: ");
-        int refillAmount = sc.nextInt();
+        int refillAmount = scanner.nextInt();
 
         int bonus;
         bonus = refillAmount / 100;
