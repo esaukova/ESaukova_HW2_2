@@ -26,7 +26,7 @@ public class Main {
         int finalAmount;
         finalAmount = initAmount + refillAmount + bonus;
 
-        if (bonus >= 1) {
+        if (refillAmount > 1000) {
             System.out.println("Клиент пополнил счёт на: " + refillAmount + " рублей - бонус равен: " + bonus + " рублей, итоговая сумма на счету клиента: " + finalAmount + " рублей.");
         } else {
             System.out.println("Клиент пополнил счёт на: " + refillAmount + " рублей - бонусов нет, итоговая сумма на счету клиента: " + finalAmount + " рублей.");
